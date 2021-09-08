@@ -1,0 +1,37 @@
+{
+    "name": "cpyun/iseed-think",
+    "description": "Generate seed file from table",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "cpyun",
+            "email": "fuyang108@gmail.com"
+        }
+    ],
+    "require": {
+    	"php": "^8.0",
+        "topthink/framework": "^6.0.0",
+        "topthink/think-migration": "^3.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0.0",
+        "league/flysystem": "^1.1.4",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "cpyun\\iseed\\": "src"
+        }
+    },
+    "extra": {
+        "think":{
+            "services":[
+                "cpyun\\iseed\\IseedService"
+            ],
+            "config":{
+                "trace": "src/config/iseed.php"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
