@@ -10,12 +10,10 @@
     ],
     "require": {
     	"php": "^8.0",
-        "topthink/framework": "^6.0.0",
-        "topthink/think-migration": "^3.0"
+        "topthink/think-migration": "^3.0.3"
     },
     "require-dev": {
         "mockery/mockery": "^1.0.0",
-        "league/flysystem": "^1.1.4",
         "phpunit/phpunit": "^8.0"
     },
     "autoload": {
@@ -29,7 +27,7 @@
                 "cpyun\\iseed\\IseedService"
             ],
             "config":{
-                "trace": "src/config/iseed.php"
+                "iseed": "src/config/iseed.php"
             }
         }
     },
