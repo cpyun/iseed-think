@@ -63,15 +63,20 @@ class Iseed
 
     /**
      * Generates a seed file.
-     * @param  string   $table
-     * @param  string   $prefix
-     * @param  string   $suffix
-     * @param  string   $database
-     * @param  int      $max
-     * @param  string   $prerunEvent
-     * @param  string   $postunEvent
+     * @param string $table
+     * @param string $prefix
+     * @param string $suffix
+     * @param string $database
+     * @param int $max
+     * @param int $chunkSize
+     * @param string $exclude
+     * @param string $prerunEvent
+     * @param string $postrunEvent
+     * @param bool $dumpAuto
+     * @param bool $indexed
+     * @param string $orderBy
+     * @param string $direction
      * @return bool
-     * @throws Orangehill\Iseed\TableNotFoundException
      */
     public function generateSeed($table, $prefix=null, $suffix=null, $database = null, $max = 0, $chunkSize = 0, $exclude = null, $prerunEvent = null, $postrunEvent = null, $dumpAuto = true, $indexed = true, $orderBy = null, $direction = 'ASC')
     {
