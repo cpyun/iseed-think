@@ -1,6 +1,6 @@
 {
     "name": "cpyun/iseed-think",
-    "description": "Generate seed file from table",
+    "description": "Generate a new Thinkphp database seed file based on data from the existing database table.",
     "license": "Apache-2.0",
     "authors": [
         {
